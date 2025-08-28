@@ -5,22 +5,26 @@ const DetallesBoda = () => {
 
       <div className="detalles-card">
         <div className="detalle-item">
-          <span className="icon">📅</span>
-          <p>08 de Noviembre de 2025 - 10:30 am</p>
+          <span className="icon">🗓️​​</span>
+          <p>08 de Noviembre de 2025</p>
+        </div>
+         <div className="detalle-item">
+          <span className="icon">🕥​</span>
+          <p>Hora ceremonia 10: 30 am</p>
         </div>
 
         <div className="detalle-item">
-          <span className="icon">📍</span>
+          <span className="icon">🏛️​</span>
           <p>Notaría 37, Bogotá</p>
         </div>
 
         <div className="detalle-item">
-          <span className="icon">👔</span>
+          <span className="icon">👌​</span>
           <p>Dress code: Semi-formal</p>
         </div>
 
         <div className="detalle-item">
-          <span className="icon">💌</span>
+          <span className="icon">💌​</span>
           <p>Lluvia de sobres</p>
         </div>
 

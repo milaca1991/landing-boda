@@ -266,3 +266,23 @@ button:hover, a.btn:hover {
   background: #214032;
   transform: scale(1.05);
 }
+
+
+/*media queries*/
+
+@media screen and (max-width: 360px) {
+  .hero-content-box {
+    padding: 20px 15px;
+    width: 90%; /* contenedor se ajusta al ancho de pantalla */
+  }
+
+  .hero-content-box h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .hero-content-box p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
