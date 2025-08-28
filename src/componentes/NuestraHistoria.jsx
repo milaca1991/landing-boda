@@ -1,11 +1,14 @@
+import asadoImg from "../img/asado.jpg";
+import viajeejeImg from "../img/viajeeje.jpg";
+import viajeeuroImg from "../img/viajeeuro.jpg";
 
 
 const NuestraHistoria = () => {
   const fotos = [
 
-    { src: "src/img/asado.jpg", caption: "El amor es elegir, cada día, a la misma persona 💍" },
-    { src: "src/img/viajeeje.jpg", caption: "Es aprender a esperar, incluso cuando el tiempo se alarga✨" },
-    { src: "src/img/viajeeuro.jpg", caption: "y saber que la felicidad solo es real cuando es compartida 🚌 " },
+    { src: asadoImg, caption: "El amor es elegir, cada día, a la misma persona 💍" },
+    { src: viajeejeImg, caption: "Es aprender a esperar, incluso cuando el tiempo se alarga✨" },
+    { src: viajeeuroImg, caption: "y saber que la felicidad solo es real cuando es compartida 🚌 " },
   ];
 
   return (
