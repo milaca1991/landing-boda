@@ -1,8 +1,14 @@
-export default function Hero() {
+
+const Hero = () => {
   return (
-    <section style={{ background: "linear-gradient(to bottom, #ffe4ec, #fff)" }}>
-      <h1 style={{ fontSize: "3rem", marginBottom: "10px" }}>Camila & Diego</h1>
-      <p style={{ fontSize: "1.5rem" }}>¡Nos casamos!</p>
+    <section className="hero">
+      <div className="hero-content-box">
+    <h1>Cami & Diego</h1>
+    <p>¡Estás invitado a nuestra boda!
+Acompáñanos a dar el "Sí, acepto"</p>
+  </div>
     </section>
   );
-}
+};
+
+export default Hero;

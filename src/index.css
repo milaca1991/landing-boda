@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
-  background-color: #fff8f3;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfcf9; /* beige elegante */
+  color: #2d2d2d; /* gris oscuro para texto */
   text-align: center;
 }
 
@@ -11,19 +11,258 @@ section {
 }
 
 h1, h2 {
-  color: #c2185b;
+  color: #2c3e50; /* azul grisáceo elegante */
+  font-family: 'Georgia', serif;
 }
 
 button, a.btn {
-  background: #c2185b;
+  background: #3a6351; /* verde salvia elegante */
   color: white;
   padding: 12px 24px;
-  border-radius: 8px;
+  border-radius: 25px; /* más suave y romántico */
   text-decoration: none;
   display: inline-block;
   margin-top: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover, a.btn:hover {
-  background: #a31545;
+  background: #2e4f42; /* tono más oscuro al pasar */
+  transform: translateY(-2px);
+}
+
+
+/* ===========================
+   HERO
+=========================== */
+.hero {
+  position: relative;
+  height: 100vh;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.9)),
+    url("./img/yose2.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-content-box {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.85); /* efecto vidrio */
+  padding: 30px 25px;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  text-align: center;
+  backdrop-filter: blur(8px);
+  animation: fadeInDown 1.2s ease both;
+}
+
+.hero-content-box h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  margin: 0 0 15px;
+  color: #2c3e50;
+}
+
+.hero-content-box p {
+  font-size: 1rem;
+  margin: 0;
+  color: #444;
+}
+
+
+/* ===========================
+   COUNTDOWN
+=========================== */
+.countdown {
+  background: linear-gradient(#fff, #f7f5f0); /* crema elegante */
+  padding: 80px 20px;
+}
+
+.countdown h2 {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.time-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.time-boxes div {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  min-width: 90px;
+}
+
+.time-boxes span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3a6351; /* mismo verde elegante */
+  display: block;
+}
+
+.time-boxes p {
+  font-size: 0.9rem;
+  margin: 5px 0 0;
+  color: #555;
+}
+
+
+/* ===========================
+   DETAILS
+=========================== */
+.details {
+  background: #fff;
+  padding: 80px 20px;
+}
+
+.details h2 {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+
+/* ===========================
+   RESPUESTA
+=========================== */
+.respuesta {
+  background: #f4f1ea; /* beige suave */
+  padding: 80px 20px;
+}
+
+.respuesta h2 {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+  padding: 25px;
+  font-size: 0.9rem;
+  color: #555;
+  background: #fdfcf9;
+  border-top: 1px solid #e2e2e2;
+  font-style: italic;
+}
+
+
+.nuestra-historia {
+  padding: 20px;
+  background: #fffaf5;
+  text-align: center;
+}
+
+.titulo {
+  font-family: "Georgia", serif;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.fotos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.foto-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.caption {
+  font-size: 0.95rem;
+  padding: 10px;
+  color: #444;
+  background: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+/*detalles */
+/* DetallesBoda.css */
+.detalles-container {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.detalles-title {
+    font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2e3a2f;
+}
+
+.detalles-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.detalles-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.detalle-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #444;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.map-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background: #305f48;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.map-button:hover {
+  background: #214032;
+  transform: scale(1.05);
 }

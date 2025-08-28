@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer style={{ padding: "20px", fontSize: "0.9rem", color: "#666" }}>
+    <footer className="footer">
       Con amor 💕 Camila & Diego - 2025
     </footer>
   );

@@ -21,11 +21,22 @@ function Countdown() {
   }, []);
 
   return (
-    <section>
+   /* <section>
       <h2>Faltan...</h2>
       <p style={{ fontSize: "1.5rem" }}>
         {timeLeft.days} días {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
       </p>
+    </section>*/
+
+    <section className="countdown">
+      <h2>Faltan...</h2>
+      <div className="time-boxes">
+        <div><span>{timeLeft.days}</span><p>Días</p></div>
+        <div><span>{timeLeft.hours}</span><p>Horas</p></div>
+        <div><span>{timeLeft.minutes}</span><p>Minutos</p></div>
+        <div><span>{timeLeft.seconds}</span><p>Segundos</p></div>
+        <h2>para dar el sí...</h2>
+      </div>
     </section>
   );
 }
