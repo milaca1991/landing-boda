@@ -1,3 +1,4 @@
+/*
 export default function respuesta() {
   return (
     <section className="respuesta">
@@ -13,3 +14,29 @@ export default function respuesta() {
     </section>
   );
 }
+*/
+
+
+const ConfirmAttendance = () => {
+  const whatsappNumber = "573118548628";
+  const message = "Hola, confirmo mi asistencia. Iremos ___ personas.";
+
+  return (
+    <section className="confirm-section">
+      <h2 className="section-title">✨Confirma tu asistencia</h2>
+      <p className="section-text">
+        Ayúdanos confirmando tu asistencia para organizar mejor nuestro día 
+      </p>
+      <a
+        href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="confirm-button"
+      >
+        Confirmar por WhatsApp
+      </a>
+    </section>
+  );
+};
+
+export default ConfirmAttendance;
