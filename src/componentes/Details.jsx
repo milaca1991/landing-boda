@@ -60,7 +60,7 @@ const EventDetails = () => {
           <CalendarIcon />
         </div>
         <h3>Fecha y hora</h3>
-        <p>Sábado, 08 de Noviembre 2025 · 10:30 A.M.</p>
+        <p>Sábado, 08 de Nov 2025 · 10:30 A.M.</p>
       </div>
 
       <div className="event-item">
